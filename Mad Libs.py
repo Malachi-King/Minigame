@@ -1,6 +1,7 @@
 import tkinter
 import tkinter as tk
 
+
 def madLibsRules():
     print("Have you ever played Mad Libs? If not, here's how to play!")
     print("I have a story that's missing some words. It's your job to give me the words to fill in the blanks, however,")
@@ -54,3 +55,6 @@ def main():
         main()
 if __name__ == "__main__":
     main()
+
+
+## fuck you lol
