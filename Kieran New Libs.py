@@ -1,6 +1,6 @@
 from tkinter import messagebox
 import tkinter as tkinter
-
+## compact way the gay boi did
 def gui1():
     if prompt1 := messagebox.askyesno(
         title="Welcome to Mad Libs!", message="Do you want to play Mad Libs?"
