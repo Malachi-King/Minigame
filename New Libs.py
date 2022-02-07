@@ -1,4 +1,4 @@
-from tkinter import messagebox
+from tkinter import (messagebox, Tk, Entry, mainloop)
 import tkinter as tk
 
 def gui1():
@@ -31,9 +31,25 @@ def playedMadLibsFalse():
         playedMadLibsTrue()
 def playedMadLibsTrue():
     messagebox.showinfo(title = "Mad Libs", message = "Let's get started, then!")
+    tkinterUIGeneration1()
+
+def tkinterUIGeneration1():
+    master = Tk()
+    master.geometry("500x200")
+    master.title("Mad Libs")
+    userInput1 = tk.StringVar()
+    prompt1 = tk.Label(master, text = "Give me an animal: " ).pack()
+    entry1 = tk.Entry(master, textvariable = userInput1).pack()
+    button1 = tk.Button(master, text = "Confirm...", command=tkinterUIGeneration2).pack()
+
+def tkinterUIGeneration2():
+    messagebox.showinfo(title = "Penis", message = "penis")
+
 
 def main():
     gui1()
     
 if __name__ == "__main__":
     main()
+
+mainloop()
